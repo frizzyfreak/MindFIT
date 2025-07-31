@@ -33,13 +33,14 @@ A comprehensive mental health analysis tool designed for defense personnel asses
 - Statistical summaries
 
 ### Mental Health Assessment
-- 6-dimensional assessment framework
-- PHQ-9 depression screening
+- 5-dimensional core assessment framework
+- Separate clinical risk evaluation (PHQ-9 depression screening)
 - Risk level categorization
 - Personalized recommendations
 
 ### Visualizations
 - Interactive charts and graphs
+- Balanced radar chart for core mental health dimensions
 - Cluster analysis plots
 - Demographic distributions
 - Feature importance analysis
@@ -113,14 +114,15 @@ MindFIT/
 
 ## 📈 Assessment Framework
 
-The tool evaluates personnel across 6 key dimensions:
+The tool evaluates personnel across 5 core mental health dimensions displayed in a balanced radar chart:
 
 1. **Stress Response** - Reaction to high-pressure situations
 2. **Anxiety Management** - Control over worry and fear
 3. **Coping Skills** - Personal resilience mechanisms
 4. **Overall Wellbeing** - General mental health status
 5. **Support Systems** - Social and professional networks
-6. **Clinical Risk** - Depression and risk indicators
+
+**Clinical Risk Assessment** - Depression indicators (PHQ-9) are evaluated separately to maintain balance in the core assessment visualization.
 
 ## 🎯 Risk Classification
 

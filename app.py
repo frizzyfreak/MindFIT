@@ -553,8 +553,8 @@ elif page == "Individual Assessment":
             avg_wellbeing = np.mean(wellbeing_scores)
             avg_support = np.mean(support_scores)
             
-            # Overall score includes all 6 dimensions
-            overall_score = np.mean([avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support, clinical_risk_score])
+            # Overall score includes the 5 core dimensions (clinical risk assessed separately)
+            overall_score = np.mean([avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support])
             
             # Determine risk level
             if depression_score >= 15 or suicidal_thoughts == "Yes":
@@ -598,27 +598,35 @@ elif page == "Individual Assessment":
                 st.metric("Overall Wellness Score", f"{overall_score:.1f}/5.0")
                 st.metric("Clinical Risk Indicator", f"{clinical_risk_score:.1f}/5.0")
             
-            # Detailed breakdown (6 categories)
-            st.subheader("Detailed Category Scores")
+            # Detailed breakdown (Core 5 categories + Clinical Risk displayed separately)
+            st.subheader("Core Mental Health Dimensions")
             categories_df = pd.DataFrame({
-                'Category': ['Stress Response', 'Anxiety Management', 'Coping Skills', 'Overall Wellbeing', 'Support Systems', 'Clinical Risk'],
-                'Score': [avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support, clinical_risk_score],
+                'Category': ['Stress Response', 'Anxiety Management', 'Coping Skills', 'Overall Wellbeing', 'Support Systems'],
+                'Score': [avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support],
                 'Status': [
                     'Good' if avg_stress >= 3.5 else 'Needs Attention',
                     'Good' if avg_anxiety >= 3.5 else 'Needs Attention',
                     'Good' if avg_coping >= 3.5 else 'Needs Attention',
                     'Good' if avg_wellbeing >= 3.5 else 'Needs Attention',
-                    'Good' if avg_support >= 3.5 else 'Needs Attention',
-                    'Good' if clinical_risk_score >= 3.5 else 'Needs Attention'
+                    'Good' if avg_support >= 3.5 else 'Needs Attention'
                 ]
             })
             st.dataframe(categories_df, use_container_width=True)
             
-            # Enhanced 6-Dimension Radar Chart
+            # Clinical Risk displayed separately
+            st.subheader("Clinical Assessment")
+            clinical_df = pd.DataFrame({
+                'Assessment': ['Clinical Risk Indicator (Depression Screening)'],
+                'Score': [clinical_risk_score],
+                'Status': ['Good' if clinical_risk_score >= 3.5 else 'Needs Clinical Attention']
+            })
+            st.dataframe(clinical_df, use_container_width=True)
+            
+            # Enhanced 5-Dimension Radar Chart (balanced without clinical risk)
             fig_radar = go.Figure()
             fig_radar.add_trace(go.Scatterpolar(
-                r=[avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support, clinical_risk_score],
-                theta=['Stress Response', 'Anxiety Management', 'Coping Skills', 'Overall Wellbeing', 'Support Systems', 'Clinical Risk'],
+                r=[avg_stress, avg_anxiety, avg_coping, avg_wellbeing, avg_support],
+                theta=['Stress Response', 'Anxiety Management', 'Coping Skills', 'Overall Wellbeing', 'Support Systems'],
                 fill='toself',
                 name='Your Scores',
                 line_color='rgb(32, 146, 230)',
@@ -638,7 +646,7 @@ elif page == "Individual Assessment":
                 ),
                 showlegend=True,
                 title={
-                    'text': "Comprehensive Mental Health Assessment Radar Chart",
+                    'text': "Mental Health Assessment Radar Chart - Core Dimensions",
                     'x': 0.5,
                     'font': {'size': 16}
                 },
