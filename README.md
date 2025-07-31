@@ -4,27 +4,27 @@ A comprehensive mental health analysis tool designed for defense personnel asses
 
 > **Project Background**: Developed during a 2-month internship at DRDO, this tool creates a Mental Health Assessment Questionnaire for Defence Personnel in India. The system uses K-means clustering to classify data, Random Forest Classifier (building up to 100 trees), and TextBlob for Semantic Analysis, providing diagnosis along with radar charts & personalized feedback.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **[Try the app here](https://mindfit-drdo.streamlit.app/)**
 
 ---
 
-## 📋 Key Features
+##  Key Features
 
-### 🧠 **Advanced Analytics**
+###  **Advanced Analytics**
 - **Sentiment Analysis**: Natural language processing using TextBlob to analyze textual responses
 - **Machine Learning Clustering**: K-means algorithm to identify mental health groups (85% accuracy)
 - **Predictive Modeling**: Random Forest classifier with 100 trees for mental readiness prediction
 - **Statistical Analysis**: Comprehensive demographic patterns and correlations
 
-### 💻 **Interactive Assessment**
+###  **Interactive Assessment**
 - **5-Dimensional Core Assessment**: Balanced evaluation framework
 - **PHQ-9 Depression Screening**: Separate clinical risk evaluation
 - **Real-time Risk Classification**: Immediate feedback with personalized recommendations
 - **Visual Analytics**: Interactive radar charts and demographic visualizations
 
-### 🔍 **Data Exploration**
+###  **Data Exploration**
 - **Personnel Search & Filtering**: Advanced search capabilities
 - **Demographic Analysis**: Gender, age, and role distribution patterns
 - **Cluster Visualization**: Interactive charts showing mental health group distributions
