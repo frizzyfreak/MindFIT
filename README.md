@@ -31,7 +31,7 @@ A comprehensive mental health analysis tool designed for defense personnel asses
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Frontend**: Streamlit
 - **Data Processing**: Pandas, NumPy
@@ -42,9 +42,9 @@ A comprehensive mental health analysis tool designed for defense personnel asses
 
 ---
 
-## 📊 Research Findings & Analysis
+##  Research Findings & Analysis
 
-### 🎯 **Cluster Analysis Results**
+###  **Cluster Analysis Results**
 
 Our analysis successfully identified three distinct mental health groups:
 
@@ -54,7 +54,7 @@ Our analysis successfully identified three distinct mental health groups:
 ![Elbow Method](assets/elbow%20method.png)
 <p align="center"><em>Elbow method validation showing optimal k=3 clusters for mental health classification</em></p>
 
-### 🔍 **Key Differentiating Factors**
+###  **Key Differentiating Factors**
 
 The analysis revealed critical questions that effectively distinguish between mental health groups:
 
@@ -67,7 +67,7 @@ The analysis revealed critical questions that effectively distinguish between me
 - **Crisis Decision-Making**: Responses to teammate violations and mistake handling
 - **Emotional Regulation**: Ability to identify and manage emotional reactions
 
-### 👥 **Demographic Insights**
+###  **Demographic Insights**
 
 ![Gender Distribution](assets/gender%20distribution.png) ![Role Distribution Within Clusters](assets/Role%20distribution%20withi%20clusters.png)
 <p align="center"><em>Gender and role distribution patterns across mental health clusters</em></p>
@@ -80,23 +80,23 @@ The analysis revealed critical questions that effectively distinguish between me
 - **Leadership Roles**: Captains and Majors more prevalent in 'High Health' cluster
 - **Age Factor**: Mental readiness shows minimal age correlation, indicating psychological rather than demographic determinants
 
-### 🎯 **Model Performance**
+###  **Model Performance**
 - **Accuracy**: 85% on test set
 - **High Precision & Recall**: Across all clusters
 - **Robust Classification**: Validated clustering methodology
 
 ---
 
-## 📈 Assessment Framework
+##  Assessment Framework
 
-### 🎨 **Core Mental Health Dimensions** (Radar Chart)
+###  **Core Mental Health Dimensions** (Radar Chart)
 1. **Stress Response** - Reaction to high-pressure situations
 2. **Anxiety Management** - Control over worry and fear
 3. **Coping Skills** - Personal resilience mechanisms
 4. **Overall Wellbeing** - General mental health status
 5. **Support Systems** - Social and professional networks
 
-### 🏥 **Clinical Assessment** (Separate Evaluation)
+###  **Clinical Assessment** (Separate Evaluation)
 - **PHQ-9 Depression Screening** - Professional clinical indicators
 - **Risk Level Classification** - Immediate attention requirements
 
@@ -108,7 +108,7 @@ The analysis revealed critical questions that effectively distinguish between me
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. **Clone Repository**
 ```bash
@@ -175,7 +175,7 @@ MindFIT/
 5. **📈 Visualizations**: Research findings and charts
 6. **🧠 Individual Assessment**: Complete mental health evaluation tool
 
-### 🩺 **Assessment Components**
+###  **Assessment Components**
 
 - **Personal Information**: Demographics and consent
 - **Stress Response & Crisis Management**: Pressure handling capabilities
@@ -187,7 +187,7 @@ MindFIT/
 
 ---
 
-## 🎯 Research Conclusions & Recommendations
+##  Research Conclusions & Recommendations
 
 ### ✅ **Validated Findings**
 - **Reliable Classification**: 85% accuracy in predicting mental health groups
@@ -236,7 +236,7 @@ This project is developed for **DRDO-SSPL research purposes** and defense person
 For questions, technical support, or collaboration inquiries regarding this mental health analysis tool, please contact the development team.
 
 **Research Institution**: Defence Research and Development Organisation (DRDO)  
-**Laboratory**: Solid State Physics Laboratory (SSPL)  
+**Laboratory**: Solid State Physics Laboratory (SSPL) , New Delhi
 **Project Type**: Internship Research Project  
 **Year**: 2025
 
