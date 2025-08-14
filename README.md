@@ -233,7 +233,7 @@ This project is developed for **DRDO-SSPL research purposes** and defense person
 
 ## 👥 Contact & Support
 
-For questions, technical support, or collaboration inquiries regarding this mental health analysis tool, please contact the development team.
+For questions, technical support, or collaboration inquiries regarding this mental health analysis tool, please leave your query at hemantd107@gmail.com.
 
 **Research Institution**: Defence Research and Development Organisation (DRDO)  
 **Laboratory**: Solid State Physics Laboratory (SSPL) , New Delhi
